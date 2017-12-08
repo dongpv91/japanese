@@ -1,0 +1,50 @@
+{
+  "name": "DongPV",
+  "version": "1.0.0",
+  "description": "Get started with React, Redux",
+  "scripts": {
+    "build": "yarn run clean && brunch build",
+    "clean": "rm -rf dist && mkdir dist",
+    "relay": "relay-compiler --src src --schema src/schema.gql",
+    "relay:watch": "relay-compiler --src ./src --schema ./src/schema.gql --watch",
+    "start": "yarn run clean && brunch watch -s"
+  },
+  "main": "index.js",
+  "author": "Dong Pham Van",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-brunch": "6.1.1",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "6.24.1",
+    "brunch": "2.10.9",
+    "clean-css-brunch": "2.10.0",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.10.0",
+    "eslint-plugin-react": "^7.4.0",
+    "style-loader": "^0.19.0",
+    "uglify-js-brunch": "2.10.0"
+  },
+  "dependencies": {
+    "history": "^4.7.2",
+    "json-brunch": "^1.5.4",
+    "moment": "^2.19.1",
+    "phoenix": "file:../deps/phoenix",
+    "phoenix_html": "file:../deps/phoenix_html",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-addons-create-fragment": "^15.6.2",
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "react-redux-form": "^1.16.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-select": "^1.0.0-rc.10",
+    "react-tabs": "^2.1.0",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "whatwg-fetch": "^1.1.0"
+  }
+}
